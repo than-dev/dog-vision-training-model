@@ -1,0 +1,6 @@
+tensorflow
+tensorflow_hub
+scikit-learn
+matplotlib
+pandas
+opencv-python
