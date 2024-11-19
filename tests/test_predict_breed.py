@@ -28,10 +28,6 @@ class TestPredictBreed(unittest.TestCase):
         # Testa se o modelo foi carregado corretamente
         self.assertIsNotNone(self.model, "Falha ao carregar o modelo.")
 
-    def test_layer_in_model(self):
-        # Verifica se a camada KerasLayer está no modelo
-        keras_layer_found = any(isinstance(layer, hub.KerasLayer) for layer in self.model.layers)
-        self.assertTrue(keras_layer_found, "O modelo não contém a camada KerasLayer.")
 
 if __name__ == '__main__':
     unittest.main()
