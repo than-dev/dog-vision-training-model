@@ -57,7 +57,11 @@ Depois de ficar satisfeito com o desempenho do modelo, implemente-o para tarefas
 
 ### `main.py`
 
-Este arquivo é responsável por treinar nosso próprio modelo. Ele executa o treinamento utilizando o conjunto de dados disponível e exibe um teste visual do modelo em ação, permitindo visualizar os resultados das previsões realizadas pelo modelo treinado.
+Este arquivo é responsável por receber a imagem e utilizar o modelo treinado para realizar a previsão da raça do cachorro. Após receber o caminho ou URL da imagem, ele pré-processa a imagem e passa pelo modelo para gerar a previsão. Em seguida, exibe o resultado da classificação, indicando a raça do cachorro na imagem fornecida. O `main.py` serve como a interface entre o usuário e o modelo de aprendizado de máquina, permitindo a interação com a aplicação para realizar as previsões.
+
+### `train-model.py`
+
+Este arquivo é responsável pelo treinamento do modelo de reconhecimento de raças de cães. Ele carrega o conjunto de dados, divide os dados em treino e teste, e treina o modelo utilizando o TensorFlow. Após o treinamento, o modelo é avaliado com base nos dados de teste e, finalmente, salvo em um arquivo para uso posterior. Este script permite gerar um modelo de classificação capaz de prever a raça de cães com base em imagens fornecidas.
 
 ### `predict_full_set.py` e `predict_minified_set.py`
 
