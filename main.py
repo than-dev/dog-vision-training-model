@@ -10,20 +10,16 @@ import numpy as np
 import tensorflow_hub as hub
 from utils import predict_breed, display_prediction  
 
-# Suprimindo mensagens de log do TensorFlow
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 
-# Caminho do modelo salvo
 MODEL_PATH = 'models/meu_modelo.h5'
 
 def preprocess_image(image_path, target_size=(224, 224)):
-    """Carrega e preprocessa a imagem para entrada no modelo."""
     try:
-        # Abrindo a imagem com PIL (em vez de cv2)
         image = Image.open(image_path).convert('RGB')
         image = image.resize(target_size)
-        image_array = np.array(image) / 255.0  # Normaliza os pixels
-        return np.expand_dims(image_array, axis=0)  # Adiciona uma dimensão extra para batch
+        image_array = np.array(image) / 255.0 
+        return np.expand_dims(image_array, axis=0)  
     except Exception as e:
         print(f"Erro ao processar a imagem: {e}")
         sys.exit(1)
