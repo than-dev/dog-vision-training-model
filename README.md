@@ -1,6 +1,4 @@
-# Identificação de Raças de Cães usando TensorFlow e MobileNetV2-Adam
-
-## Visão Geral
+## Identificação de Raças de Cães
 
 Bem-vindo ao projeto de Identificação de Raças de Cães! Este projeto tem como objetivo desenvolver um modelo de aprendizado de máquina para identificar raças de cães a partir de imagens, utilizando TensorFlow e a arquitetura MobileNetV2 com o otimizador Adam. O objetivo é criar um modelo preciso que possa reconhecer várias raças de cães, fornecendo insights sobre a visão canina e auxiliando em aplicações como cuidados com animais de estimação e reconhecimento de raças.
 
@@ -36,22 +34,6 @@ O modelo é treinado usando a estrutura TensorFlow com a arquitetura MobileNetV2
 ## Avaliação
 
 A avaliação envolve gerar probabilidades de previsão para cada raça de cão de cada imagem de teste. Essas probabilidades de previsão podem ser comparadas com rótulos verdadeiros para avaliar o desempenho do modelo na classificação precisa de raças de cães. O processo de avaliação ajuda a fornecer insights sobre a eficácia do modelo em identificar raças de cães a partir de imagens.
-
-## Uso
-
-Para utilizar o modelo de Identificação de Raças de Cães, siga estas etapas:
-
-1. Clone o repositório para sua máquina local.
-
-   ```bash
-   git clone https://github.com/sarthaklambaa/dog-vision-identification.git
-   ```
-2. Instale as dependências necessárias, incluindo TensorFlow e outras bibliotecas requeridas.
-3. Pré-processe seu conjunto de dados, garantindo o redimensionamento, normalização e aumento adequados.
-4. Treine o modelo usando os scripts ou Notebooks Jupyter fornecidos.
-5. Avalie o desempenho do modelo em um conjunto de dados de validação separado e ajuste os hiperparâmetros conforme necessário.
-
-Depois de ficar satisfeito com o desempenho do modelo, implemente-o para tarefas de identificação de raças em sua aplicação ou ambiente.
 
 ## Arquivos do Projeto
 
